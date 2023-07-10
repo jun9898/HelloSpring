@@ -9,10 +9,9 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service
+// 서비스 에노테이션을 입력시 스프링 실행시 멤버 서비스를 등록한다.
 public class MemberService {
 
-    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }

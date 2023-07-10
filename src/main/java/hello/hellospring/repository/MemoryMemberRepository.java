@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
-@Repository
+// 리포지토리 에노테이션을 입력해놓으면 스프링 실행시 리포지도리를 등록해서 제어함
 public class MemoryMemberRepository implements MemberRepository{
     private static Map<Long,Member> store = new HashMap<>();
     private static long sequence = 0L;
